@@ -86,7 +86,7 @@ def expand_contractions(text_arr: pd.Series) -> pd.Series:
     return text_arr.apply(contractions.fix)
 
 def remove_ats(text_arr): 
-    at_regex = r"@[A-Za-z0-9]+"
+    at_regex = r"@[^\s]+"
     return text_arr.str.replace(at_regex, "")
 
 
