@@ -2,5 +2,6 @@
 __pycache__
 .vscode
 fasttext_binaries
-fasttest-0.9.2
+fastText-0.9.2
 models
+wandb
